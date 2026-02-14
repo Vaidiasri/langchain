@@ -80,6 +80,19 @@ A practical example of generating a movie review in a specific dictionary format
 python simple_dict_example.py
 ```
 
+---
+
+### 5. Sequential Chain (`sequential_chain.py`)
+
+Demonstrates how to chain multiple LLM calls together using LCEL (LangChain Expression Language).
+Input -> Translate to French -> Translate to Spanish -> Output.
+
+```bash
+python sequential_chain.py
+```
+
+_Example: English "Hello" -> French "Bonjour" -> Spanish "Hola"_
+
 ## 📖 Documentation
 
 See [structured_output_guide.md](structured_output_guide.md) for a detailed guide on using structured outputs.
