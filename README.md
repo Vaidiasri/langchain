@@ -93,6 +93,17 @@ python sequential_chain.py
 
 _Example: English "Hello" -> French "Bonjour" -> Spanish "Hola"_
 
+### 6. Parallel Chain (`parallel_chain.py`)
+
+Demonstrates how to run multiple chains **simultaneously** using `RunnableParallel`.
+Input -> [Make Notes] + [Make Quiz] -> Combined Output.
+
+```bash
+python parallel_chain.py
+```
+
+_Example: Input text -> Returns dictionary with "notes" and "quiz"._
+
 ## 📖 Documentation
 
 See [structured_output_guide.md](structured_output_guide.md) for a detailed guide on using structured outputs.
