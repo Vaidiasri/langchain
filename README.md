@@ -1,39 +1,85 @@
-## Simple CLI Chat Bot (LangChain + Gemini)
+# LangChain + Google Gemini Examples
 
-This project is a minimal **terminal chat bot** using **LangChain** with **Google Gemini** (`langchain_google_genai`).
+This project demonstrates how to use **LangChain** with **Google Gemini** (`langchain_google_genai`) for various use cases, including chatbots, simple chains, and structured outputs.
 
-### Setup
+## 🚀 Setup
 
-- **Create a virtualenv** (recommended) and install deps
-- **Set your API key**
+1.  **Clone the repository** and navigate to the project folder.
+2.  **Create a virtual environment** (recommended):
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # on Windows: venv\Scripts\activate
+    ```
+3.  **Install dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+4.  **Set your API key**:
+    Create a `.env` file in the project root:
+    ```bash
+    GOOGLE_API_KEY=your_key_here
+    ```
 
-Create a file named `.env` in the project root:
+## 📚 Examples
 
-```bash
-GOOGLE_API_KEY=your_key_here
-```
+### 1. Interactive CLI Chatbot (`main.py`)
 
-### Run
+A simple terminal-based chat bot that remembers conversation history.
 
 ```bash
 python main.py
 ```
 
-Optional flags:
+**Options:**
+
+- `--model`: Specify model (default: `gemini-2.5-flash`)
+- `--temperature`: Set creativity (0.0 to 1.0)
+- `--system`: Set system prompt
+- `--list-models`: List available models
+
+**Commands:**
+
+- `/exit` or `/quit`: Exit the chat
+- `/reset`: Clear conversation history
+
+---
+
+### 2. Simple Chain (`simple_chain.py`)
+
+Demonstrates a basic LangChain pipeline using `PromptTemplate` and Gemini.
 
 ```bash
-python main.py --model gemini-1.5-flash --temperature 0.7 --system "You are a helpful assistant."
+python simple_chain.py
 ```
 
-If you get a **404 NOT_FOUND** for a model, list what your key can access and pick one:
+_Asks: "What is the capital of France?"_
+
+---
+
+### 3. Structured Output (`structured_output_example.py`)
+
+Comprehensive examples showing how to get **JSON/Dictionary responses** from the LLM.
 
 ```bash
-python main.py --list-models
-python main.py --model gemini-2.0-flash
+python structured_output_example.py
 ```
 
-### Commands
+**Covers 3 methods:**
 
-- **`/exit`** or **`/quit`**: quit
-- **`/reset`**: clear conversation history
+1.  **TypedDict**: Simple dictionary structure
+2.  **Pydantic BaseModel**: Validated structure (Recommended)
+3.  **JSON Schema**: Raw schema definition
 
+---
+
+### 4. Simple Structured Example (`simple_dict_example.py`)
+
+A practical example of generating a movie review in a specific dictionary format.
+
+```bash
+python simple_dict_example.py
+```
+
+## 📖 Documentation
+
+See [structured_output_guide.md](structured_output_guide.md) for a detailed guide on using structured outputs.
