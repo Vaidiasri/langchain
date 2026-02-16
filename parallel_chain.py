@@ -74,10 +74,10 @@ if __name__ == "__main__":
 
     result = parallel_chain.invoke({"context": sample_text})
 
-    print("\nSTUDY NOTES:")
+    print("\n📚 STUDY NOTES:")
     print("-" * 20)
     print(result["notes"])
 
-    print("\n\n QUIZ:")
+    print("\n QUIZ:")
     print("-" * 20)
     print(result["quiz"])
