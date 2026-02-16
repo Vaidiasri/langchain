@@ -104,6 +104,17 @@ python parallel_chain.py
 
 _Example: Input text -> Returns dictionary with "notes" and "quiz"._
 
+### 7. Conditional Chain (`conditional_chain.py`)
+
+Demonstrates how to route requests to different chains based on logic (Sentiment Analysis) using `RunnableBranch`.
+Input -> [Sentiment Classifier] -> [Positive/Negative/Neutral] Branch -> Specific Response.
+
+```bash
+python conditional_chain.py
+```
+
+_Example: "I love this!" routes to Positive Chain -> "Thank you note"._
+
 ## 📖 Documentation
 
 See [structured_output_guide.md](structured_output_guide.md) for a detailed guide on using structured outputs.
