@@ -14,6 +14,9 @@ This project demonstrates how to use **LangChain** with **Google Gemini** (`lang
     ```bash
     pip install -r requirements.txt
     ```
+
+    > **Note:** If you are using a virtual environment (like `myenv`), make sure to activate it *before* installing dependencies.
+
 4.  **Set your API key**:
     Create a `.env` file in the project root:
     ```bash
@@ -114,6 +117,30 @@ python conditional_chain.py
 ```
 
 _Example: "I love this!" routes to Positive Chain -> "Thank you note"._
+
+### 8. Document Loaders (RAG Basics)
+
+Demonstrates how to load and summarize documents using specific loaders.
+
+**A. Text Document Loader (`text_doc.py`)**
+Loads a text file (`dummy_data.txt`) and summarizes it.
+
+```bash
+python text_doc.py
+```
+
+**B. PDF Document Loader (`pdf_doc.py`)**
+First, generate a dummy PDF:
+```bash
+python generate_pdf.py
+```
+Then, load and summarize it:
+```bash
+python pdf_doc.py
+```
+
+_Note: Ensure `pypdf` and `reportlab` are installed._
+
 
 ## 📖 Documentation
 
