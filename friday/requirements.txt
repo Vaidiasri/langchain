@@ -1,0 +1,20 @@
+# Friday AI Agent — Dependencies
+# Core
+langchain
+langchain-google-genai
+langchain-community
+python-dotenv
+langchain-groq
+
+# Web Search
+duckduckgo-search
+
+# Voice - Text-to-Speech (free, no API key)
+edge-tts
+pygame
+langdetect
+
+# Voice - Speech-to-Text (now enabled for Hindi conversation)
+openai-whisper
+SpeechRecognition
+PyAudio
