@@ -7,4 +7,16 @@ __pycache__/
 .mypy_cache/
 .venv/
 venv/
-
+# Get Shit Done (GSD)
+.agent/
+.gemini/
+.gsd/
+adapters/
+docs/
+scripts/
+PROJECT_RULES.md
+GSD-STYLE.md
+model_capabilities.yaml
+gsd-setup.ps1
+LICENSE
+VERSION
