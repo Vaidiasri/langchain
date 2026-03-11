@@ -149,6 +149,18 @@ python ddg_search_tool.py
 
 _Note: Requires `ddgs` (installed via `pip install -U ddgs`)._
 
+### 10. Custom Multiplication Tool (`multiply_tool.py`)
+
+A custom LangChain tool built using the `@tool` decorator. It demonstrates:
+- Basic Python function implementation.
+- Type hinting for automatic argument schema generation.
+- Using the `.invoke()` method to test the tool.
+
+```bash
+python multiply_tool.py
+```
+
+---
 
 ## 📖 Documentation
 
