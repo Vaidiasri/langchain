@@ -162,6 +162,34 @@ python multiply_tool.py
 
 ---
 
+### 11. Friday: Bilingual AI Assistant (`friday/friday.py`)
+
+Friday is a sophisticated, bilingual personal assistant (Hindi & English) that uses LangChain agents to execute tasks.
+
+**Features:**
+- **Bilingual Support**: Fluent in Hindi and English.
+- **Agentic**: Uses tools independently to solve complex queries.
+- **Voice In/Out**:
+  - **STT**: Local transcription via OpenAI Whisper.
+  - **TTS**: High-quality speech via `edge-tts`.
+- **Tool Suite**: web_search, multiply, file_ops, system_cmd, calculator, datetime, and reminders.
+
+**Usage:**
+```bash
+# Start in text mode
+python friday/friday.py
+
+# Start in voice mode
+python friday/friday.py --mode voice
+
+# Start in hybrid mode (text input, voice output)
+python friday/friday.py --mode hybrid
+```
+
+---
+
 ## 📖 Documentation
 
-See [structured_output_guide.md](structured_output_guide.md) for a detailed guide on using structured outputs.
+- [structured_output_guide.md](structured_output_guide.md): Guide on JSON/Structured responses.
+- [.gsd/SPEC.md](.gsd/SPEC.md): Technical specification for Friday.
+- [.gsd/ROADMAP.md](.gsd/ROADMAP.md): Development phases and progress.
