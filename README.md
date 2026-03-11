@@ -139,7 +139,15 @@ Then, load and summarize it:
 python pdf_doc.py
 ```
 
-_Note: Ensure `pypdf` and `reportlab` are installed._
+### 9. Web Search Tool (`ddg_search_tool.py`)
+
+Demonstrates how to use LangChain's built-in `DuckDuckGoSearchRun` tool for web searching.
+
+```bash
+python ddg_search_tool.py
+```
+
+_Note: Requires `ddgs` (installed via `pip install -U ddgs`)._
 
 
 ## 📖 Documentation
