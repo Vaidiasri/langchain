@@ -139,26 +139,13 @@ Then, load and summarize it:
 python pdf_doc.py
 ```
 
-### 9. Web Search Tool (`ddg_search_tool.py`)
+### 9. Web Search Tool (Integrated)
 
-Demonstrates how to use LangChain's built-in `DuckDuckGoSearchRun` tool for web searching.
+The standalone `ddg_search_tool.py` has been integrated into the **Friday AI Assistant**. You can now use web search directly through the assistant.
 
-```bash
-python ddg_search_tool.py
-```
+### 10. Custom Multiplication Tool (Integrated)
 
-_Note: Requires `ddgs` (installed via `pip install -U ddgs`)._
-
-### 10. Custom Multiplication Tool (`multiply_tool.py`)
-
-A custom LangChain tool built using the `@tool` decorator. It demonstrates:
-- Basic Python function implementation.
-- Type hinting for automatic argument schema generation.
-- Using the `.invoke()` method to test the tool.
-
-```bash
-python multiply_tool.py
-```
+The custom multiplication tool is now part of the **Friday AI Assistant**'s tool suite. Refer to `friday/tools/multiply.py` for the implementation.
 
 ---
 
