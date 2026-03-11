@@ -52,13 +52,14 @@ def list_tools_info():
     """Display available tools."""
     print("\n🔧 Available Tools:")
     print("  1. 🌐 web_search     — Search the web (DuckDuckGo)")
-    print("  2. 📄 read_file      — Read file contents")
-    print("  3. ✏️  write_file     — Create/write files")
-    print("  4. 📁 list_directory — List folder contents")
-    print("  5. 💻 run_command    — Execute shell commands")
-    print("  6. 🔢 calculator     — Math calculations")
-    print("  7. 📅 get_current_datetime — Current date & time")
-    print("  8. ⏰ set_reminder   — Set timed reminders")
+    print("  2. ✖️  multiply       — Multiply two numbers")
+    print("  3. 📄 read_file      — Read file contents")
+    print("  4. ✏️  write_file     — Create/write files")
+    print("  5. 📁 list_directory — List folder contents")
+    print("  6. 💻 run_command    — Execute shell commands")
+    print("  7. 🔢 calculator     — Math calculations")
+    print("  8. 📅 get_current_datetime — Current date & time")
+    print("  9. ⏰ set_reminder   — Set timed reminders")
     print()
 
 

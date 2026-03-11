@@ -24,12 +24,14 @@ from tools.system_cmd import run_command
 from tools.calculator import calculator
 from tools.datetime_tool import get_current_datetime
 from tools.reminder import set_reminder
+from tools.multiply import multiply
 
 
 def get_all_tools():
     """Return a list of all available tools for the agent."""
     return [
         web_search,
+        multiply,
         read_file,
         write_file,
         list_directory,
